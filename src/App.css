@@ -1,38 +1,219 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    font-family: Nunito;
+    background: radial-gradient(ellipse at center, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+  justify-content: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  .html
+  {
+    background-color:black;
+  }
+  .left-container
+  {
+    color: #282c3490;
+  }
+  
+  .chitty
+  {
+    text-align: left;
+    padding: 5px;
+    color: #282c34;
+    margin-top: 5px;
+  }
+  .chitty2
+  {
+    text-align: left;
+    padding: 5px;
+    color: #282c34;
+    margin-top: 5px;
+  }
+  
+  .mpage
+  {
+    background-color: #282c3410;
+    margin: 0;
+  }
+  .right-column {
+    display: flex;
+    flex-direction: column;}
+  
+  
+  .scrollable-container {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .chat-container {
+   
+    height: 610px; 
+    width:100%;
+    overflow-y: auto; 
+    display: flex;
+    overflow: auto;
+  
+  }
+  .left-container
+  {
+    width: 35%;
+    max-height: 100%; 
+    float: left;
+    overflow-y: scroll;
+  height: 50%;
+  margin-top:10px ;
+  }
+  .scrollable-chat {
+    border-radius: 7px 0px 0px 0px;
+    max-height: 100%; 
+    width: 65%;
+    float: right;
+    overflow-y: scroll;
+    background-color: #282c34;
+    overflow: 'hidden';
+  }
+  
+  .entry-input
+  {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:whitesmoke;
+  border-radius: 30px;
+  height: 350px;
+  width: 350px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
   }
-  to {
-    transform: rotate(360deg);
+  .tmp
+  {
+    display: flex;
+    flex-direction: column;
+    background-color: #61dafb;
   }
-}
+  input
+  {
+    padding: 10px;
+    border-radius: 80px;
+  border: 2px solid black;
+  background: var(--white, #FFF);
+  background: linear-gradient(to bottom, #FFC0CB30, #FFFFFF);
+  
+  margin: 10px;
+  
+  }
+  .chatHeading
+  {
+    background: linear-gradient(45deg, #FF6B6B, #556270);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  color: #FFF;
+  margin: 0;
+  font-weight: bolder;
+  font-family: Nunito;
+  padding-left: 10px;
+  }
+  .linkedR
+  {
+    margin-top: 20px;
+    background: none;
+    text-decoration: underline;
+    border: none;
+    font-family: Nunito;
+  
+  }
+  .linkedL
+  {
+    background: none;
+    text-decoration: underline;
+    border: none;
+    font-family: Nunito;
+  
+  }
+  .photo
+  {
+    height: 30px;
+    width:30px;
+  }
+  .text-wrap {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .log-in
+  {
+    font-family: Nunito;
+  
+    margin-top: 20px;
+  }
+  button
+  {
+    padding: 10px;
+    border-radius: 80px;
+    
+  border: 2px solid black;
+  width:100px;
+  
+  
+  }
+  
+  .chat
+  {
+    width: 100%;
+    background-color: #282c3490;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+  
+  }
+  .chatinput
+  {
+    background-color: #282c3490;
+  
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container img {
+    margin-right: 10px;
+  }
+  
+  .message-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+  
+  .message-left {
+    display: flex;
+  }
+  
+  .message-sender {
+    font-size: 10px;
+    font-style: italic;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2px;
+  }
+  
+  .message-time {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2px;
+    padding-left: 5px;
+  }
+  
+  
+  
+    
